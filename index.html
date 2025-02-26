@@ -84,3 +84,39 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Meter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Poll Meter</h1>
+        <div id="poll-setup">
+            <input type="text" id="question" placeholder="Enter your poll question">
+            <div id="options-container">
+                <input type="text" class="option" placeholder="Option 1">
+                <input type="text" class="option" placeholder="Option 2">
+            </div>
+            <button id="add-option">Add Option</button>
+            <button id="start-poll">Generate Poll & QR</button>
+        </div>
+        
+        <div id="poll-container" style="display:none;">
+            <h2 id="poll-question"></h2>
+            <div id="options"></div>
+            <canvas id="voteChart"></canvas>
+            <div id="qr-container"></div>
+            <button id="reset-poll">Reset Poll</button>
+            <button id="share-link">Share Poll</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
