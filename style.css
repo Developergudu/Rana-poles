@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #282c36;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+input, button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    background: #444;
+    color: #fff;
+}
+
+button {
+    background: #0ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00f;
+    color: #fff;
+}
+
+#qrCode {
+    margin: 10px 0;
+}

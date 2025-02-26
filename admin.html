@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Create Poll</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Create a Poll</h2>
+        <input type="text" id="question" placeholder="Enter your question">
+        <input type="text" id="option1" placeholder="Option 1">
+        <input type="text" id="option2" placeholder="Option 2">
+        <button onclick="createPoll()">Create Poll</button>
+        
+        <h3>QR Code (Share with Participants)</h3>
+        <div id="qrCode"></div>
+        
+        <h3>End Poll</h3>
+        <button onclick="endPoll()">End Poll</button>
+    </div>
+
+    <script src="firebase.js"></script>
+    <script src="qr-code.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
